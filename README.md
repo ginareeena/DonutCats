@@ -1,19 +1,22 @@
 <h1 align="center"> Welcome to Donut Cats!</h1>
 <p align="center"><img src="./public/assets/banner/banner.png"/></p>
 
-A game about a cat who loves to eat donuts.
+A game about a cat who loves donuts.
 
 Game built in Phaser 3, art and assets drawn in Adobe Photoshop.
+
+# Deployment in progress!
+
 
 # Running Locally:
 
 1. Fork
 2. clone and npm install
-3. npm run start-dev
+3. npm run start
 
-# Playing the Game:
+# How to Play:
 
-- Wake your cat up! (hint: click it til it can't "stand" it)
+- To start first wake your cat up (hint: click til it can't "stand" it anymore)
 - Use the cursor keys to move around the screen and collect donuts
 - Purple Donuts increase your score and spawn more donuts
 - Green Donuts Heal Your Damage
@@ -22,8 +25,3 @@ Game built in Phaser 3, art and assets drawn in Adobe Photoshop.
   use this to your advantage to clear the screen to generate more point donuts. Make sure to eat green donuts after to heal!
 - Play again and try to beat your high score!
 
-# Controls:
-
-- Click to wake up (hint: click it til it can't "stand" it)
-- Left cursor to walk left
-- Right cursor to walk right
