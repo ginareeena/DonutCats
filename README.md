@@ -1,77 +1,29 @@
-# FS-App-Template
+<h1 align="center"> Welcome to Donut Cats!</h1>
+<p align="center"><img src="./public/assets/banner/banner.png"/></p>
 
-## Setup
+A game about a cat who loves to eat donuts.
 
-To use this as boilerplate, you'll need to take the following steps:
+Game made with Phaser 3, backgrounds & sprites drawn in Adobe Photoshop
 
-* Don't fork or clone this repo! Instead, create a new, empty
-  directory on your machine and `git init` (or create an empty repo on
-  Github and clone it to your local machine)
+# Running Locally:
 
-* Now you will have to add the fs-app-template as a remote and merge it into your own repository.
+1. Fork
+2. clone and npm install
+3. npm run start-dev
 
-```
-git remote add boilermaker https://github.com/FullstackAcademy/fs-app-template.git
-git fetch boilermaker
-git merge boilermaker/main
-git branch -m master main
-```
+# Playing the Game:
 
-## Customize
+- Wake your cat up! (hint: click it til it can't "stand" it)
+- Use the cursor keys to move around the screen and collect donuts
+- Purple Donuts increase your score and spawn more donuts
+- Green Donuts Heal Your Damage
+- Red Donuts Deal Damage
+- When your bar is low enough you will absorb red donuts. You can
+  use this to your advantage to clear the screen to generate more point donuts. Make sure to eat green donuts after to heal!
+- Play again and try to beat your high score!
 
-Now that you've got the code, follow these steps to get acclimated:
+# Controls:
 
-* Update project name and description in `package.json`
-* `npm install`
-* Create two postgres databases (`MY_APP_NAME` should match the `name`
-  parameter in `package.json`):
-* These commands will create both your **development** and **test** databases
-
-```
-createdb <YOUR APP NAME HERE FROM package.json>
-createdb <YOUR APP NAME HERE FROM package.json>-test
-```
-
-* By default, running `npm test` will use your test database, while
-  regular development uses development database
-
-## Start
-
-Running `npm run start:dev` will make great things happen!
-
-- start:dev will both start your server and build your client side files using webpack
-- start:dev:logger is the same as start:dev, but you will see your SQL queries (can be helpful for debugging)
-- start:dev:seed will start your server and also seed your database
-
-
-### Heroku
-
-1.  Set up the [Heroku command line tools][heroku-cli]
-2.  `heroku login`
-3.  Add a git remote for heroku:
-
-[heroku-cli]: https://devcenter.heroku.com/articles/heroku-cli
-
-* **If you are creating a new app...**
-
-  1.  `heroku create` or `heroku create your-app-name` if you have a
-      name in mind.
-  2.  `heroku config:set JWT=<your secret here!>` to set a secret for JWT signing
-
-Database Setup
-
-  3.  `heroku addons:create heroku-postgresql:hobby-dev` to add
-      ("provision") a postgres database to your heroku dyno (This creates your production database)
-
-  4.  `heroku config:set SEED=true` to get heroku to sync and seed your database
-
-  5.   note everytime your app restarts, the database tables will be dropped and re-created. To avoid this you can config:unset SEED
-
-
-* **If you already have a Heroku app...**
-
-  1.  `heroku git:remote your-app-name` You'll need to be a
-      collaborator on the app.
-
-
-Now, you should be deployed!
+- Click to wake up (hint: click it til it can't "stand" it)
+- Left cursor to walk left
+- Right cursor to walk right

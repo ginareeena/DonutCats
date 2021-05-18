@@ -1,21 +1,18 @@
 body {
-  font-family: sans-serif;
+  margin: 0;
+  background-color: white;
+  color: black;
 }
 
-a {
-  text-decoration: none;
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  /* height: 600; */
+  height: 100vh;
+  width: 100vw;
 }
-
-label {
-  display: block;
-}
-
-nav a {
-  display: inline-block;
-  margin: 1em;
-}
-
-form div {
-  margin: 1em;
-  display: inline-block;
+#canvas-container {
+  border: none;
 }
