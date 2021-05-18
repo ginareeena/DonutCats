@@ -3,12 +3,11 @@
 
 A game about a cat who loves donuts.
 
-Game built in Phaser 3, art and assets drawn in Adobe Photoshop.
+Game built in Phaser 3, assets drawn in Adobe Photoshop.
 
 # Deployment in progress!
 
-
-# Running Locally:
+# How to Run it locally:
 
 1. Fork
 2. clone and npm install
