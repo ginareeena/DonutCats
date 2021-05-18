@@ -3,7 +3,7 @@
 
 A game about a cat who loves to eat donuts.
 
-Game made with Phaser 3, backgrounds & sprites drawn in Adobe Photoshop
+Game built in Phaser 3, art and assets drawn in Adobe Photoshop.
 
 # Running Locally:
 
