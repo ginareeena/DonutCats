@@ -10,8 +10,8 @@ module.exports = {
   entry: ["@babel/polyfill", "./src/index.js"],
 
   output: {
-    path: "/",
-    publicPath: "/public/",
+    path: "/public",
+    // publicPath: "/public/",
     filename: "bundle.js",
   },
 
