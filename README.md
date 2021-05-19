@@ -3,7 +3,7 @@
 
 A game about a cat who loves donuts.
 
-Game built in Phaser 3, assets drawn in Adobe Photoshop.
+Game built in Phaser 3, pixel art drawn in Adobe Photoshop.
 
 # Deployment in progress!
 
@@ -15,11 +15,14 @@ Game built in Phaser 3, assets drawn in Adobe Photoshop.
 
 # How to Play:
 
-- To start first wake your cat up (hint: click til it can't "stand" it anymore)
+- To start wake up the cat! (hint: click it 'til it can't "stand" it)
 - Use the cursor keys to move around the screen and collect donuts
 - Purple Donuts increase your score and spawn more donuts
 - Green Donuts Heal Your Damage
 - Red Donuts Deal Damage
+- Click play again to try to beat your high score!
+
+Hint:
+
 - When your bar is low enough you will absorb red donuts. You can
   use this to your advantage to clear the screen to generate more point donuts. Make sure to eat green donuts after to heal!
-- Play again and try to beat your high score!
