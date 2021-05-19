@@ -11,7 +11,7 @@ Game built in Phaser 3, assets drawn in Adobe Photoshop.
 
 1. Fork
 2. clone and npm install
-3. npm run start
+3. npm run start-dev
 
 # How to Play:
 
@@ -23,4 +23,3 @@ Game built in Phaser 3, assets drawn in Adobe Photoshop.
 - When your bar is low enough you will absorb red donuts. You can
   use this to your advantage to clear the screen to generate more point donuts. Make sure to eat green donuts after to heal!
 - Play again and try to beat your high score!
-

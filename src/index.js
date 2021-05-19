@@ -16,7 +16,7 @@ class MyGame extends Phaser.Scene {
 
   preload() {
     //player
-    this.load.spritesheet("cat", ".assets/sprites/cat.png", {
+    this.load.spritesheet("cat", "./assets/sprites/cat.png", {
       frameWidth: 300,
       height: 300,
     });
