@@ -7,7 +7,8 @@ const path = require("path");
 
 module.exports = {
   mode: isDev ? "development" : "production",
-  entry: ["@babel/polyfill", "./src/index.js"],
+  entry: ["./client/index.js"],
+  // entry: ["@babel/polyfill", "./src/index.js"],
   output: {
     path: __dirname,
     filename: "./public/bundle.js",
