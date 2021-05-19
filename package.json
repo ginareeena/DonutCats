@@ -1,7 +1,7 @@
 {
   "name": "DonutCats",
   "version": "2.0.0",
-  "description": "A game about a cat who loves to eat donuts",
+  "description": "A game about a cat who loves donuts",
   "main": "src/index.js",
   "scripts": {
     "build-client": "webpack",
