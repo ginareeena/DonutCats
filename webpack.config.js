@@ -7,7 +7,7 @@ const path = require("path");
 
 module.exports = {
   mode: isDev ? "development" : "production",
-  entry: ["./src/index.js"],
+  entry: "./src/index.js",
   // entry: ["@babel/polyfill", "./src/index.js"],
   output: {
     path: __dirname,
