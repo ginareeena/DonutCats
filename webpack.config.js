@@ -8,11 +8,18 @@ const path = require("path");
 module.exports = {
   mode: isDev ? "development" : "production",
   entry: ["@babel/polyfill", "./src/index.js"],
+
   output: {
-    path: path.resolve(__dirname, "public"),
+    path: "/",
     publicPath: "/public/",
     filename: "bundle.js",
   },
+
+  // output: {
+  //   path: path.resolve(__dirname, "public"),
+  //   publicPath: "/public/",
+  //   filename: "bundle.js",
+  // },
   resolve: {
     extensions: [".js", ".jsx"],
   },
