@@ -9,10 +9,13 @@ module.exports = {
   mode: isDev ? "development" : "production",
   entry: ["@babel/polyfill", "./src/index.js"],
   output: {
-    path: path.resolve(__dirname, "public"),
-    publicPath: "/public/",
-    filename: "[name].js",
+    path: __dirname,
+    filename: "./public/bundle.js",
+    // path: path.resolve(__dirname, "public"),
+    // publicPath: "/public/",
+    // filename: "bundle.js",
   },
+
   resolve: {
     extensions: [".js", ".jsx"],
   },
