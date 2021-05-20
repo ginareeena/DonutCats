@@ -5,7 +5,9 @@ A game about a cat who loves donuts.
 
 Game built in Phaser 3, pixel art drawn in Adobe Photoshop.
 
-# Deployment in progress!
+# Play the game online at:
+
+https://donut-cats.herokuapp.com/
 
 # How to Run it locally:
 
