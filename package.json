@@ -4,7 +4,7 @@
   "description": "A game about a cat who loves donuts",
   "main": "src/index.js",
   "scripts": {
-    "start": "cd server && node server.js",
+    "start": "cd server && node index.js",
     "heroku-postbuild": "webpack -p",
     "build-client": "webpack",
     "build-client-watch": "webpack -w",
