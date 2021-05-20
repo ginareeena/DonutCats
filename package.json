@@ -4,9 +4,10 @@
   "description": "A game about a cat who loves donuts",
   "main": "src/index.js",
   "scripts": {
+    "start": "cd server && node server.js",
+    "heroku-postbuild": "webpack -p",
     "build-client": "webpack",
     "build-client-watch": "webpack -w",
-    "start": "NODE_ENV='development' npm run build-client-watch & NODE_ENV='development' npm run start-server",
     "start-dev": "NODE_ENV='development' npm run build-client-watch & NODE_ENV='development' npm run start-server",
     "start-server": "nodemon server -e html,js,scss --ignore public "
   },
