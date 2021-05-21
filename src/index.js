@@ -15,6 +15,8 @@ class MyGame extends Phaser.Scene {
   }
 
   preload() {
+    //preloads images and sprites
+
     //player
     this.load.spritesheet("cat", "./assets/sprites/cat.png", {
       frameWidth: 300,
@@ -34,10 +36,11 @@ class MyGame extends Phaser.Scene {
       "startScreen",
       "./assets/startScreen/startScreen_Purple.png"
     );
-    //health bar
+    //health bar color
     this.load.image("left-cap", "./assets/healthbar/barL.png");
     this.load.image("middle", "./assets/healthbar/barM.png");
     this.load.image("right-cap", "./assets/healthbar/barR.png");
+    //health bar shadow
     this.load.image("left-cap-shadow", "./assets/healthbar/barShadowL.png");
     this.load.image("middle-shadow", "./assets/healthbar/barShadowM.png");
     this.load.image("right-cap-shadow", "./assets/healthbar/barShadowR.png");
@@ -49,8 +52,10 @@ class MyGame extends Phaser.Scene {
 
   create() {
     // this.cameras.main.backgroundColor.setTo(243, 213, 255);
-    this.cameras.main.setBackgroundColor("#f3d5ff");
-    this.cameras.main.fadeIn(500, 255, 255, 255);
+    // this.cameras.main.setBackgroundColor("#f3d5ff");
+
+    // fades game in
+    this.cameras.main.fadeIn(1000, 255, 255, 255);
 
     // CREATES ELEMENTS:
 
@@ -87,7 +92,7 @@ class MyGame extends Phaser.Scene {
 
     this.setMeterPercentage(1);
 
-    // Player/Cat
+    // Cat (player)
 
     cat = this.physics.add.sprite(400, 300, "cat", 0);
 
@@ -110,7 +115,6 @@ class MyGame extends Phaser.Scene {
 
     this.startScreen = this.add.image(400, 300, "startScreen");
     // this.startScreen.displayWidth = this.sys.game.config.width;
-    // this.startScreen.displayHeight = this.sys.game.config.height;
 
     // Score Text
     this.scoreText = this.add.text(18, 16, "score: 0", {
@@ -195,14 +199,14 @@ class MyGame extends Phaser.Scene {
     });
 
     //keyboard input listeners:
-
     this.cursors = this.input.keyboard.createCursorKeys();
 
+    //checks if cat is asleep
     this.asleep = true;
+    //number of times cat has been clicked while asleep
     this.clickNum = 0;
 
-    // initial animation cycle
-    // game begins with cat asleep
+    // starting animation cyclen (game begins with cat asleep)
     cat.on("animationcomplete", () => {
       cat.anims.play("sleep");
       this.asleep = true;
@@ -281,6 +285,7 @@ class MyGame extends Phaser.Scene {
       }
     }
 
+    // if cat health is below a certain number it will appear red
     function donutBurn(cat, fireDonut) {
       console.log("donut burn!");
       cat.setTint(0xff0000);
@@ -342,7 +347,7 @@ class MyGame extends Phaser.Scene {
     this.setMeterPercentage(1);
   }
 
-  //hit bar animations
+  //health bar animations
   makeBar(x, y, color) {
     //draw the bar
     let bar = this.add.graphics();
