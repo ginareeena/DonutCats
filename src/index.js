@@ -50,6 +50,7 @@ class MyGame extends Phaser.Scene {
   create() {
     // this.cameras.main.backgroundColor.setTo(243, 213, 255);
     this.cameras.main.setBackgroundColor("#f3d5ff");
+    this.cameras.main.fadeIn(500, 0, 0, 0);
 
     // CREATES ELEMENTS:
 
