@@ -17,7 +17,7 @@ https://donut-cats.herokuapp.com/
 
 # How to Play:
 
-- To start wake up the cat! (hint: click it 'til it can't "stand" it)
+- To start wake up the cat! (hint: annoy it til it can't "stand" it ;) )
 - Use the cursor keys to move around the screen and collect donuts
 - Purple Donuts increase your score and spawn more donuts
 - Green Donuts Heal Your Damage

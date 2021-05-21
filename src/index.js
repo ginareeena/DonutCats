@@ -30,7 +30,10 @@ class MyGame extends Phaser.Scene {
     this.load.image("healthDonut", "./assets/donuts/healthDonut.png");
     //start and game over screens
     this.load.image("gameOver", "./assets/gameOver/gameOver.png");
-    this.load.image("startScreen", "./assets/startScreen/startScreen.png");
+    this.load.image(
+      "startScreen",
+      "./assets/startScreen/startScreen_Purple.png"
+    );
     //health bar
     this.load.image("left-cap", "./assets/healthbar/barL.png");
     this.load.image("middle", "./assets/healthbar/barM.png");
@@ -45,7 +48,8 @@ class MyGame extends Phaser.Scene {
   }
 
   create() {
-    this.cameras.main.backgroundColor.setTo(255, 255, 255);
+    // this.cameras.main.backgroundColor.setTo(243, 213, 255);
+    this.cameras.main.setBackgroundColor("#f3d5ff");
 
     // CREATES ELEMENTS:
 
@@ -104,6 +108,8 @@ class MyGame extends Phaser.Scene {
     ground.displayWidth = this.sys.game.config.width;
 
     this.startScreen = this.add.image(400, 300, "startScreen");
+    // this.startScreen.displayWidth = this.sys.game.config.width;
+    // this.startScreen.displayHeight = this.sys.game.config.height;
 
     // Score Text
     this.scoreText = this.add.text(18, 16, "score: 0", {
@@ -417,6 +423,7 @@ let game = new Phaser.Game({
   type: Phaser.AUTO,
   width: 800,
   height: 600,
+  transparent: true,
   parent: "phaser-game",
   scene: [MyGame],
   physics: { default: "arcade", arcade: { gravity: { y: 600 }, debug: false } },

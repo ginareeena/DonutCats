@@ -1,18 +1,20 @@
 body {
   margin: 0;
   background-color: white;
-  color: black;
+  /* color: "#f3d5ff"; */
 }
 
 #container {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: none;
-  /* height: 600; */
+  /* border: none; */
   height: 100vh;
   width: 100vw;
+  color: "#f3d5ff";
+  transition: background-image 12s;
 }
 #canvas-container {
   border: none;
+  /* display: none; */
 }
