@@ -434,6 +434,7 @@ let game = new Phaser.Game({
   scene: [MyGame],
   physics: { default: "arcade", arcade: { gravity: { y: 600 }, debug: false } },
   parent: "canvas-container",
+  pixelArt: true,
 });
 
 game.play;
